@@ -11,13 +11,14 @@ public class Usuario {
     @Column
     private String nome;
 
-    public int getId() {
-        return id;
-    }
+    @Column
+    private String CPF;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    @Column
+    private String email;
+
+    @Column
+    private String preferencias;
 
     public String getNome() {
         return nome;
@@ -25,5 +26,29 @@ public class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPreferencias() {
+        return preferencias;
+    }
+
+    public void setPreferencias(String preferencias) {
+        this.preferencias = preferencias;
     }
 }
